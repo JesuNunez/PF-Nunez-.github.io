@@ -1,98 +1,207 @@
-* {
-    padding: 0;
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Newsreader', serif;
+	font-size: 20px;
 }
+
 body {
-    margin: 0;
+	background-color: white;
+}
+h1{
+	text-align: center;
+	margin: 40px;
+	font-size: 40px;
+}
+h2 {
+	text-align: center;
+	padding: 40px;
+	margin: 10px;
 }
 .header_index {
-    background-color: #A0A0A0;
-    display: flex;
-    height: 70px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
+	background-color: #a0a0a0;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 70px;
+	padding: 5px 10;
 }
-.main_index {
-    text-align: center;
-    margin-bottom: 100px;
-    margin-top: 100px;
+
+.header_index .Logo{
+	cursor: pointer;
+	margin-right: auto;
 }
-footer {    /*USAR FLEXBLOX PARA LA SEGUNDA ENTREGA*/
-    width: 100%;
-    background-color: #A0A0A0;
+
+.header_index .Logo img{
+	height: 70px;
+	width: auto;
+	transition: all 0.3s;
 }
-.footer_1 {    /*USAR FLEXBLOX PARA LA SEGUNDA ENTREGA*/
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 50px;
-    padding: 45px 0px;
-}  
-#imagenf {
-    width: 250px;
+
+.header_index .Logo img:hover {
+	transform: scale(1.2);
 }
-.footer_2 {    /*USAR FLEXBLOX PARA LA SEGUNDA ENTREGA*/
-    padding: 15px 10px;
-    text-align: center;
+
+.header_index .nav-link{
+	list-style: none;
 }
-.header_Vacunas {
-    background-color: #A0A0A0;
-    display: flex;
-    height: 70px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
+
+.header_index .nav-link li{
+	display: inline-block;
+	padding: 0 20px;
 }
-.main_Vacunas h1,p,img {
-    margin: 50px;
-    text-align: center;
+
+.header_index .nav-link li:hover{
+	transform: scale(1.1);
 }
-.footer_1_Vacunas {    /*USAR FLEXBLOX PARA LA SEGUNDA ENTREGA*/
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 50px;
-    padding: 45px 0px;
+
+.header_index .nav-link a{
+	font-size: 600;
+	color: white;
+	text-decoration: none;
 }
-.footer_2_Vacunas{
-    padding: 15px 10px;
-    text-align: center;
+
+.header_index .nav-link li a:hover {
+	color: black;
 }
-.body_Sesion {
-    margin: 0;
-    padding: 0;
-    font-family: montserrat;
-    background: linear-gradient(150deg, #6C3483, #58D68D);
-    height: 100vh;
+
+.header_index .btn{
+	margin-right: 20px;
+	margin-left: 20px;
+	font-weight: 600;
+	color: white;
+	background: #426B1F;
+	padding: 9px 25px;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
 }
-.Formulario {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 400px;
-    background: white;
-    border-radius: 10px;
+
+.header_index .btn:hover {
+	background-color: #426B1F;
+	color: black;
+	transform: scale(1.1);
 }
+
+.slider-box{
+	width: 1000px;
+	height: 200px;
+	margin: 50px 45% 50px;
+	overflow: hidden;
+}
+
+.slider-box ul{
+	display: flex;
+	padding: 0px;
+	width: 400%;
+	animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-box li{
+	width: 100%;
+	list-style: none;
+	position: relative;
+}
+
+@keyframes slide{
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+footer{
+	position: static;
+	bottom: 0px;
+	width: 100%;
+	background: #a0a0a0;
+}
+
+.main-container{
+	display: flex;
+}
+
+.main-container .box{
+	flex-basis: 50%;
+	padding: 10px 20px;
+}
+
+.box .content{
+	margin: 20px 0 0 0;
+}
+
+.left .content .social{
+	margin: 20px 0 0 0;
+}
+
+.left .content .social a{
+	padding: 0 2px;
+}
+
+.left .content .social a span{
+	height: 40px;
+	width: 40px;
+	background: #a0a0a0;
+	line-height: 40px;
+	text-align: center;
+	font-size: 18px;
+	border-radius: 5px;
+	transition:  0.3s;
+}
+
+.left .content .social a span:hover{
+	background: #426B1F;
+}
+
+.footer_2{
+	text-align: center;
+}
+
+.body_Sesion{
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(150deg, #6c3483, #58D68D);
+	height: 100vh;
+}
+
+.Formulario{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 400px;
+	background-color: white;
+	border-radius: 10px;
+}
+
 .Formulario h1{
-    text-align: center;
-    padding: 20px 0 20px 0;
-    border-bottom: 1px solid silver;
+	text-align: center;
+	padding: 0 0 20px 0;
+	border-bottom: 1px solid silver;
 }
-.Formulario form {
-    padding: 0 40px;
-    box-sizing: border-box;
+
+.Formulario form{
+	padding: 0 40px;
+	box-sizing: border-box;
+
 }
-form .username {
-    position: relative;
-    border-bottom: 2px solid silver;
-    margin: 30px 0;
+
+form .username{
+	position: relative;
+	border-bottom: 2px solid silver;
+	margin: 30px 0;
 }
+
 .username input {
     width: 100%;
     padding: 0 5px;
@@ -102,8 +211,7 @@ form .username {
     background: none;
     outline: none;
 }
-.username label { /*AGREGAR ANIMACION DE LEVANTAR EL NOMBRE Y LA CONTRASEÑA CUANDO SE VAYA A ESCRIBIR*/
-    position: absolute;
+.username label { 
     position: absolute;
     top: 50%;
     left: 35%;
@@ -126,7 +234,6 @@ input[type="submit"]{
     margin: -5px 0 20px 5px;
     color: blue;
     cursor: pointer;
-
 }
 .Registrarse {
     margin: 30px 0;
@@ -137,6 +244,34 @@ input[type="submit"]{
 .Registrarse a{
     color: blue;
     text-decoration: none;
+}
+/*Animacion Inicio de Sesion*/
+.username span::before{
+	content: "";
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: #6c3483;
+	transition: .5s;
+}
+.username input:focus ~ label,
+.username input:focus ~ label{
+    top: -5px;
+	color: #6c3483;
+}
+.username input:focus ~ span::before,
+.username input:focus ~ span::before{
+	width: 100%;
+}
+
+.main_Vacunas p{
+    text-align: center;
+}
+.main_Vacunas img{
+    padding: 50px;
+    margin-left: 25%;
 }
 .main_coberturas {
     padding: 30px;
@@ -154,12 +289,13 @@ input[type="submit"]{
     margin-top: 20px;
 }
 .main_coberturas img {
-    width: 100px; 
-    height: 150px; 
+    width: 200px; 
+    height: 200px; 
     float: right; 
     padding: 10px;
     clear: both;
-    margin-bottom: -50px;
+    margin-bottom: 10px;
+    margin-top: 30px;
 }
 .main_Hospitales {
     text-align: center;
@@ -197,9 +333,89 @@ input[type="submit"]{
     margin-top: 100px;
     margin-bottom: 100px;
 }
-.foto_equipo { /*AGREGAR FLEXBOX*/
-    float: left;
-    margin-left: 10%;
-    padding-left: 10px;
+.contenedor{
+    display: flex;
 }
-/*BUSCAR COLORES DE FONDO*/
+.texto-perfil{
+    align-self: center;    
+}
+.foto_equipo{
+    width: 300px;
+    margin-right: 50px;
+}
+/*Neesito ayuda con esto nose porque no se puede cambiar */
+@media (max-width:420px){
+  .main-container{
+	display: flex;
+	flex-direction: column;
+	font-size: 14px;
+  }
+  .left, .right, .center {
+	width: 100%;
+  }
+  h1, h2 {
+	text-align: center;
+  }
+  .slider-box{
+	margin: 50px 20% 50px;
+	width: 75%;
+  }
+  .header_index {
+    flex-direction: column;
+	height: 100%;
+	padding: 10px;
+  }
+  .Logo{
+	padding-left: 30%;
+  }
+  .nav-link{
+	padding-right: 100px;
+	margin-left: 100px;
+	text-align: center;
+  }
+  .nav-link li{
+	margin-bottom: 10px;
+  }
+  .Tabla_Hospitales{
+    font-size: small;
+  }
+}
+@media (min-width:420px) and (max-width:900px){
+.header_index {
+	flex-direction: column;
+	height: 100%;
+	padding: 10px;
+ }
+.Logo{
+	padding-left: 40%;
+ }
+.nav-link{
+	padding-right: 100px;
+	margin-left: 100px;
+	text-align: center;
+ }
+.nav-link li{
+	margin-bottom: 10px;
+ }
+.main_Vacunas img{
+    margin: 0;
+    padding: 0;
+}
+}
+@media (max-width: 1024px){
+  .main-container{
+	display: flex;
+	flex-direction: column;
+	font-size: 14px;
+  }
+  .left, .right, .center {
+	width: 100%;
+  }
+  h1, h2 {
+	text-align: center;
+  }
+  .slider-box{
+	margin: 50px 20% 50px;
+	width: 70%;
+  }
+}
