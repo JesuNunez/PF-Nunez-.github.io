@@ -302,7 +302,7 @@ input[type="submit"]{
     margin-top: 100px;
 }
 .Tabla_Hospitales {
-    width: 100%;
+    width: 90%;
     border-collapse: collapse;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -332,26 +332,29 @@ input[type="submit"]{
     margin-left: 35%;
     margin-top: 100px;
     margin-bottom: 100px;
-	height: 500px;
-	width: 600px;
+	height: 400px;
+	width: 500px;
 }
+
 .contenedor{
     display: flex;
+	margin-right: 500px;
+	text-align: justify;
 }
 .texto-perfil{
     align-self: center;    
 }
 .foto_equipo{
-	height: 200px;
-    width: 200px;
-    margin-right: 50px;
+	height: 50px;
+    width: 50px;
+    margin-right: 10px;
 }
 .sponsors{
-	width: 100%;
-	height: 100%;
-	margin-left: -200px;
+	width: 90%;
+	height: 90%;
+	margin-left: 100px;
 }
-/*Necesito ayuda con esto nose porque no se puede cambiar */
+
 @media (max-width:420px){
   .main-container{
 	display: flex;
@@ -387,6 +390,16 @@ input[type="submit"]{
   .Tabla_Hospitales{
     font-size: small;
   }
+  .main_Nosotros img{
+	width: 50px;
+	height: 75px;
+  }
+  .main_Nosotros p {
+    text-align: justify;
+}
+.main_Vacunas img{
+	width: 100%;
+}
 }
 @media (min-width:420px) and (max-width:900px){
 .header_index {
@@ -398,16 +411,37 @@ input[type="submit"]{
 	padding-left: 40%;
  }
 .nav-link{
+	margin-top: 10px;
 	padding-right: 100px;
-	margin-left: 100px;
+	margin-left: 130px;
 	text-align: center;
  }
 .nav-link li{
-	margin-bottom: 10px;
+	margin-bottom: 20px;
  }
 .main_Vacunas img{
     margin: 0;
     padding: 0;
+}
+#inicio_sesion{
+	margin-left: 50px;
+}
+.main_Nosotros img{
+	width: 80%;
+	height: 80%;
+	margin-left: 50px;
+}
+.sponsors {
+	width: 400px;
+	height: 300px;
+	display: inline-block;
+	margin-left: 50px;
+}
+.main_Vacunas img{
+	width: 100%;
+}
+.main_Nosotros p {
+    text-align: justify;
 }
 }
 @media (max-width: 1024px){
