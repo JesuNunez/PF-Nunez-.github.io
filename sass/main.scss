@@ -440,6 +440,73 @@ footer {
     width: 100%;
   }
 }
+@media (max-width: 420px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+
+    .left, .right, .center {
+      width: 100%;
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    .slider-box {
+      margin: 50px 20% 50px;
+      width: 75%;
+    }
+
+    .header_index {
+      flex-direction: column;
+      height: 100%;
+      padding: 10px;
+
+      .Logo {
+        padding-left: 30%;
+      }
+
+      .nav-link {
+        padding-right: 100px;
+        margin-left: 100px;
+        text-align: center;
+
+        li {
+          margin-bottom: 10px;
+        }
+      }
+
+      .Tabla_Hospitales {
+        font-size: small;
+      }
+
+      .main_Nosotros {
+        img {
+          width: 50px;
+          height: 75px;
+        }
+
+        p {
+          text-align: justify;
+        }
+      }
+
+      .main_Vacunas {
+        img {
+          width: 100%;
+          height: 100%;
+          margin-right: 50px;
+        }
+      }
+
+      .main_coberturas {
+        font-size: 15px;
+      }
+    }
+  }
+}
 
 @media (min-width: 420px) and (max-width: 900px) {
   .header_index {
@@ -462,19 +529,29 @@ footer {
       }
     }
 
-    .main_Vacunas img {
-      margin: 0;
-      padding: 0;
+    .main_Vacunas {
+      img {
+        margin: 0;
+        padding: 0;
+        width: 100px;
+        height: 150px;
+      }
     }
 
     #inicio_sesion {
       margin-left: 50px;
     }
 
-    .main_Nosotros img {
-      width: 80%;
-      height: 80%;
-      margin-left: 50px;
+    .main_Nosotros {
+      img {
+        width: 80%;
+        height: 80%;
+        margin-left: 50px;
+      }
+    }
+
+    .main_coberturas {
+      font-size: 15px;
     }
 
     .sponsors {
@@ -484,12 +561,14 @@ footer {
       margin-left: 50px;
     }
 
-    .main_Vacunas img {
-      width: 100%;
-    }
+    .main_Vacunas {
+      img {
+        width: 100%;
+      }
 
-    .main_Nosotros p {
-      text-align: justify;
+      p {
+        text-align: justify;
+      }
     }
   }
 }
@@ -500,14 +579,11 @@ footer {
     flex-direction: column;
     font-size: 14px;
 
-    .left,
-    .right,
-    .center {
+    .left, .right, .center {
       width: 100%;
     }
 
-    h1,
-    h2 {
+    h1, h2 {
       text-align: center;
     }
 
