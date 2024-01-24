@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Newsreader', serif;
+    font-size: 20px;
+  }
+  
+  body {
+    background-color: white;
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 40px;
+    font-size: 40px;
+  }
+  
+  h2 {
+    text-align: center;
+    padding: 40px;
+    margin: 10px;
+  }
+  
+  .header_index {
+    background-color: #a0a0a0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 70px;
+    padding: 5px 10;
+    
+    .Logo {
+      cursor: pointer;
+      margin-right: auto;
+  
+      img {
+        height: 70px;
+        width: auto;
+        transition: all 0.3s;
+  
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  
+    .nav-link {
+      list-style: none;
+  
+      li {
+        display: inline-block;
+        padding: 0 20px;
+  
+        &:hover {
+          transform: scale(1.1);
+        }
+  
+        a {
+          font-size: 600;
+          color: white;
+          text-decoration: none;
+  
+          &:hover {
+            color: black;
+          }
+        }
+      }
+    }
+  
+    .btn {
+      margin-right: 20px;
+      margin-left: 20px;
+      font-weight: 600;
+      color: white;
+      background: #426B1F;
+      padding: 9px 25px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+  
+      &:hover {
+        background-color: #426B1F;
+        color: black;
+        transform: scale(1.1);
+      }
+    }
+  }
+  
+  .slider-box {
+    width: 1000px;
+    height: 200px;
+    margin: 50px 45%;
+    overflow: hidden;
+  
+    ul {
+      display: flex;
+      padding: 0px;
+      width: 400%;
+      animation: slide 20s infinite alternate ease-in-out;
+    }
+  
+    li {
+      width: 100%;
+      list-style: none;
+      position: relative;
+    }
+  
+    @keyframes slide {
+      0% { margin-left: 0; }
+      20% { margin-left: 0; }
+      25% { margin-left: -100%; }
+      45% { margin-left: -100%; }
+      50% { margin-left: -200%; }
+      70% { margin-left: -200%; }
+      75% { margin-left: -300%; }
+      100% { margin-left: -300%; }
+    }
+  }
+  
+  footer {
+    position: static;
+    bottom: 0px;
+    width: 100%;
+    background: #a0a0a0;
+  }
+  
+  .main-container {
+    display: flex;
+  
+    .box {
+      flex-basis: 50%;
+      padding: 10px 20px;
+    }
+  
+    .content {
+      margin: 20px 0 0 0;
+    }
+  
+    .social {
+      margin: 20px 0 0 0;
+  
+      a {
+        padding: 0 2px;
+  
+        span {
+          height: 40px;
+          width: 40px;
+          background: #a0a0a0;
+          line-height: 40px;
+          text-align: center;
+          font-size: 18px;
+          border-radius: 5px;
+          transition: 0.3s;
+  
+          &:hover {
+            background: #426B1F;
+          }
+        }
+      }
+    }
+  }
+  
+  .footer_2 {
+    text-align: center;
+  }
+  @media (max-width: 420px) {
+    .main-container {
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+    
+      .left, .right, .center {
+        width: 100%;
+      }
+    
+      h1, h2 {
+        text-align: center;
+      }
+    
+      .header_index {
+        flex-direction: column;
+        height: 100%;
+        padding: 10px;
+    
+        .Logo {
+          padding-left: 30%;
+        }
+    
+        .nav-link {
+          padding-right: 90px;
+          margin-left: 80px;
+          text-align: center;
+          margin-bottom: 0;
+    
+          li {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    
+      .slider-box {
+        width: 80%;
+        height: 80%;
+        margin-left: 50px;
+      }
+    }
+  }
+  @media (min-width: 420px) and (max-width: 1024px) {
+    .header_index {
+      flex-direction: column;
+      height: 100%;
+      padding: 10px;
+    
+      .Logo {
+        padding-left: 40%;
+      }
+    
+      .nav-link {
+        margin-top: 10px;
+        padding-right: 100px;
+        margin-left: 130px;
+        text-align: center;
+    
+        li {
+          margin-bottom: 20px;
+        }
+      }
+    
+      .slider-box {
+        margin-left: 100px;
+        width: 50%;
+        height: 50%;
+      }
+    }
+  }

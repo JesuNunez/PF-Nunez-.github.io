@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Newsreader", serif;
+  font-size: 20px;
+}
+.main_Vacunas {
+    p {
+      text-align: center;
+    }
+  
+    img {
+      padding: 50px;
+      margin-left: 25%;
+    }
+  }
+  
+  .main_coberturas {
+    padding: 30px;
+  
+    h1,
+    h2 {
+      text-align: center;
+    }
+  
+    h4 {
+      text-align: justify;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+  
+    img {
+      width: 150px;
+      height: 150px;
+      float: right;
+      padding: 5px;
+      clear: both;
+      margin-bottom: 10px;
+      margin-top: 5px;
+    }
+  }
+  @media (max-width: 420px) {
+    .main_Vacunas img {
+        width: 100%;
+        height: 100%;
+        margin-right: 50px;
+      }
+    }
+@media (min-width: 420px) and (max-width: 900px) {
+    .header_index {
+      .main_Vacunas {
+        img {
+          margin: 0;
+          padding: 0;
+          width: 100px;
+          height: 150px;
+    
+          &:first-child {
+            width: 100%;
+          }
+        }   
+        p {
+          text-align: justify;
+        }
+      }
+    }
+    .main_Vacunas {
+      img {
+        width: 100%;
+        margin-left: -10px;
+      }
+    }
+} 
