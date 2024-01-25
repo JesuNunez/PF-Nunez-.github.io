@@ -120,25 +120,64 @@
           margin: 0px;
           padding: 0px;
           background: linear-gradient(150deg, #6c3483, #58D68D);
+          .header_index {
+            width: 100%;
+            margin-bottom: 10px;
+        
+            .Logo {
+              margin-left: 15px;
+            }
+        
+            .nav-link {
+              margin-top: 20px;
+              padding-bottom: 30px;
+            }
+        
+            a {
+              margin-bottom: 600px;
+            }
+          }
         }
       
-        margin-top: 1000px;
+        margin-top: 100px;
       
         .Formulario {
           margin-top: 200px;
           border-radius: 80px;
-          margin-left: -10px;
+          margin-left: 0px;
         }
-      }     
-}
+      }
+  }
 @media (min-width: 420px) and (max-width: 900px) {
   .body_Sesion_Inicio {
     margin: 0px;
     padding: 0px;
     background: linear-gradient(150deg, #6c3483, #58D68D);
+    margin-bottom: 100px;
+    width: 100%;
+    display: inline;
+    
+    .header_index {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .Logo {
+      margin-left: 1px;
+    }
+  
+    .nav-link {
+      margin-top: 20px;
+      padding-bottom: 30px;
+    }
+  
+    a {
+      margin-bottom: 30px;
+      margin-top: -70px;
+    }
   }  
   .Inicio_main {
-    margin-top: 1000px;
+    margin-top: 0px;
     .Formulario {
       margin-top: 200px;
     }

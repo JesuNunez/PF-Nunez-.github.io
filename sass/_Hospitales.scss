@@ -10,7 +10,13 @@
     text-align: center;
     margin-top: 100px;
   }
-  
+  .link_hospitales{
+    font-size:15px; 
+    text-decoration:none;
+    &:hover {
+      font-size:15px; 
+      text-decoration:none}
+  }
   .Tabla_Hospitales {
     width: 90%;
     border-collapse: collapse;
